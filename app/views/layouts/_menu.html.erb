@@ -1,0 +1,44 @@
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="/">
+      <%= image_tag "hn.jpg" %>
+      <h1>Hacker News</h1>
+    </a>
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item">
+        <%= link_to "New", newest_path, class: "navbar-item" %>
+      </a>
+
+      <a class="navbar-item">
+        <%= link_to "Past", front_path, class: "navbar-item" %>
+      </a>
+
+      <a class="navbar-item">
+        <%= link_to "Comments", newcomments_path, class: "navbar-item" %>
+      </a>
+
+      <a class="navbar-item">
+        <%= link_to "Ask", ask_path, class: "navbar-item" %>
+      </a>
+
+      <a class="navbar-item">
+        <%= link_to "Show", show_path, class: "navbar-item" %>
+      </a>
+
+      <a class="navbar-item">
+        <%= link_to "Jobs", jobs_path, class: "navbar-item" %>
+      </a>
+      <div class="control">
+        <input class="input is-primary is-small" type="text" placeholder="Search">
+      </div>
+    </div>
+  </div>
+</nav>
