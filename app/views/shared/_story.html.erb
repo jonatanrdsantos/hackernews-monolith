@@ -7,7 +7,7 @@
             </div>
             <div class="media-content">
                 <p class="title is-4"><%= story[:title] %></p>
-                <p class="subtitle is-6">112 points by doener 2 hours ago | 84 comments</p>
+                <p class="subtitle is-6"><%= story[:score] %> points by <%= story[:by] %> <%= time_ago_in_words(story[:time]) %> ago | <%= link_to "HN Link", "https://news.ycombinator.com/item?id=#{story[:hn_id]}", target: "_blank"  %> </p>
             </div>
         </div>
     </div>

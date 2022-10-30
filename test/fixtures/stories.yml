@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  by: MyString
+  descendants: 1
+  hn_id: 1
+  kids: MyString
+  score: 1
+  time: 2022-10-30 20:49:11
+  title: MyString
+  type: 
+  url: MyString
+
+two:
+  by: MyString
+  descendants: 1
+  hn_id: 1
+  kids: MyString
+  score: 1
+  time: 2022-10-30 20:49:11
+  title: MyString
+  type: 
+  url: MyString
