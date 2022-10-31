@@ -72,4 +72,11 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
   gem "webdrivers"
+  gem "rspec-rails", "~> 6.0"
+  gem "factory_bot_rails", "~> 6.2"
+  gem "faker", "~> 2.23"
 end
+
+gem "sidekiq", "~> 7.0"
+
+gem "redis", "~> 5.0"
